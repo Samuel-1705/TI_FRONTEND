@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Login con Html y Css</title>
+    <title>Formulario</title>
     <link rel="stylesheet" href="../styles/login.css">
 </head>
 <body>
     <div class="contenedor">
         <h2>Login</h2>
-        <form id="forma" name="forma" method="post">
+        <form id="loginForm" name="loginForm">
             <div class="elemento">
-                <label for="usuario">Usuario: </label>
-                <input type="text" id="usuario" name="usuario" required="true">
+                <label for="username">Usuario: </label>
+                <input type="text" id="username" name="username" required="true">
             </div>
             <div class="elemento">
                 <label for="email">Email:</label>
@@ -22,12 +22,14 @@
                 <label for="password">Password:</label>
                 <input type="password" name="password" id="password" required="true">
             </div>
-            <a href="">Registrarse</a>
+            <a href="../templates/register.html">Registrarse</a>
             <div class="elemento">
                 <input type="submit" value="enviar">
             </div>
         </form>
-        
+
+        <div id="message"></div>
     </div>
+    <script src="../scripts/login.js"></script>
 </body>
 </html>
