@@ -9,11 +9,16 @@
 <body>
     <div id="app">
         <div id="servers">
-            <!-- Lista de servidores -->
-            <input type="submit" value="Sevidor">
+            <h3>Servidor</h3>
+        
+            <button id="server-button">Crear Servidor</button>
+            <div id="server-list"></div>
         </div>
         <div id="channels">
+            <h3>Canales del Servidor</h3>
+            <button id="channel-button">Crear Canal</button>
             <!-- Lista de canales -->
+            <div id="channel-list"></div>
         </div>
 
         <div id="message" class="chat-container">
@@ -24,15 +29,6 @@
                 <button id="send-button">Enviar</button>
             </div>
         </div>
-        <!--
-        <div class="chat-container">
-            <div id="chat-display" class="chat-display"></div>
-            <div class="input-container">
-               <input type="text" id="message-input" placeholder="Escribe un mensaje">
-               <button id="send-button">Enviar</button> 
-            </div>
-        </div> -->
-
 
     </div>
     <script src="../scripts/app.js"></script>

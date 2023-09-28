@@ -7,8 +7,9 @@ header {
     display: flex; /* Usamos flexbox para alinear los elementos */
     justify-content: space-between; /* Espaciado uniforme entre los elementos */
     align-items: center; /* Centramos verticalmente los elementos */
-    background-color: #685ae7; /* Color de fondo opcional */
+    background-color: #3022a8; /* Color de fondo opcional */
     padding: 20px 30px; /* Espaciado interno opcional */
+    border: double 5px;
 }
 a{
     text-decoration: none;
@@ -49,4 +50,26 @@ nav a:hover{
 }
 .login a:hover{
     color: rgb(177, 158, 134);
+}
+.contenedor_principal img{
+    width: 100%;
+    height: 500px;
+}
+#letras{
+    z-index: 9999999999999999;
+}
+.contenedor_principal {
+    position: relative;
+ /* Esto evita que el contenedor ocupe toda la pantalla */
+}
+
+#letras {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    position: absolute;
+    top: 50%; /* Centra verticalmente en relación con el contenedor */
+    left: 25%; /* Centra horizontalmente en relación con el contenedor */
+    transform: translate(-50%, -50%); /* Centra completamente en relación con su propio tamaño */
+    color: aliceblue; /* Color de fondo para que el texto sea legible */
+    background-color: transparent
 }

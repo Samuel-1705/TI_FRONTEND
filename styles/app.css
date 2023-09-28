@@ -15,15 +15,32 @@ html, body {
 #servers {
     flex: 1;
     background-color: #36393f;
-    color: #ffffff;
+    color: #bddfff;
     text-align: center;
-    /* Estilos adicionales para la lista de servidores */
+    font-size: 20px;
 }
-#servers input {
+#server-button {
     padding: 20px;
     border-radius: 50%;
-    background-color: #4e7ad3;
+    background-color: #26437c;
     color:#ffffff
+
+}
+#server-button:hover {
+    background-color: #1e3564;
+}
+.server-button {
+    margin-top: 5px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #701c70;
+    color:#ffffff;
+    width: 80px;
+    text-align: center;
+    overflow: hidden;
+    height: 80px;
+    border: double black;
+
 }
 /* Estilo para la lista de canales */
 #channels {
@@ -32,6 +49,42 @@ html, body {
     color: #ffffff;
     /* Estilos adicionales para la lista de canales */
 }
+#channels h3{
+    text-align: center;
+    font-size: 25px;
+    color: #ac5cac;
+}
+#channel-button{
+    font-size: 15px;
+    padding: 20px;
+    background-color: #2f2daa;
+    color:#ffffff;
+    margin: 5px 10px;
+    width:90%;
+    height: 15px;
+    border: double rgba(0, 0, 0);
+    border-radius: 15px;
+}
+#channel-button:hover{
+    background-color: #170f83a2;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.channel-button{
+    margin-top: 5px;
+    padding: 20px;
+    background-color: #2f2daa;
+    color:#ffffff;
+    margin: 5px 10px;
+    width:90%;
+    text-align: center;
+    overflow: hidden;
+    height: 15px;
+    border: double rgba(0, 0, 0);
+    text-align: center;
+    border-radius: 15px;
+}
+
 
 /* Estilo para la lista de mensajes */
 #message {
@@ -56,17 +109,6 @@ html, body {
     border: none;
     border-radius: 5px;
     outline: none;
-}
-
-.input-container button {
-    background-color: #7289da;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin-left: 10px;
-    cursor: pointer;
-    bottom: 0;
 }
 
 .input-container button:hover {
