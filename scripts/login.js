@@ -21,8 +21,9 @@ function login() {
     })
     .then(response => {
         if (response.status === 200) {
-            // Redirect to profile page if login is successful
+    
             return response.json().then(data => {
+                localStorage.setItem("user", JSON.stringify(data));
                 window.location.href = "app.html";
             });
         } else {

@@ -10,6 +10,9 @@ header {
     background-color: #3022a8; /* Color de fondo opcional */
     padding: 20px 30px; /* Espaciado interno opcional */
     border: double 5px;
+    position: sticky;
+    top: 0px;
+    z-index: 999999999;
 }
 a{
     text-decoration: none;
@@ -53,11 +56,9 @@ nav a:hover{
 }
 .contenedor_principal img{
     width: 100%;
-    height: 500px;
+    height: 700px;
 }
-#letras{
-    z-index: 9999999999999999;
-}
+
 .contenedor_principal {
     position: relative;
  /* Esto evita que el contenedor ocupe toda la pantalla */
@@ -72,4 +73,68 @@ nav a:hover{
     transform: translate(-50%, -50%); /* Centra completamente en relación con su propio tamaño */
     color: aliceblue; /* Color de fondo para que el texto sea legible */
     background-color: transparent
+}
+.Participantes{
+    height: 650px;
+    background-color: #e0def5;
+    display: flex;
+
+}
+.Participantes h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.product-card{
+    
+    background-color: rgb(118, 116, 221);
+    width:400px;
+    margin:40px auto;
+    text-align: center;
+    border: 10px double black;
+    
+}
+
+.tamaño_img{
+    border: 5px solid black;
+    margin-top: 20px;
+    width: 300px;
+    width: 70%;
+    height: 250px;
+    
+}
+
+.product-info{
+    margin-left: 30px;
+    text-align: left;
+    font-size: 20px;
+}
+.product-info a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+}
+.product-info a:hover{
+    color: rgba(51, 41, 41, 0.616);
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para los enlaces dentro del footer */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Estilos para los enlaces cuando se les pasa el ratón por encima */
+footer a:hover {
+    text-decoration: underline;
 }
